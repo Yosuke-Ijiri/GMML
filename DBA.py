@@ -58,7 +58,7 @@ def approximate_medoid_index(series,cost_mat,delta_mat):
 def sum_of_squares(s,series,cost_mat,delta_mat):
     return sum(map(lambda t:squared_DTW(s,t,cost_mat,delta_mat),series))
 
-def DTW(s,t,cost_mat,delta_mat):
+def DTW_(s,t,cost_mat,delta_mat):
     return np.sqrt(squared_DTW(s,t,cost_mat,delta_mat))
 
 def squared_DTW(s,t,cost_mat,delta_mat):
